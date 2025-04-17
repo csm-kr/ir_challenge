@@ -52,7 +52,7 @@ class YOLOSamBox(nn.Module):
         self.args = args
 
         # load yolo
-        yolo = YOLO("./runs/detect/train/weights/best.pt").to(device)  # pretrained YOLO11n model
+        yolo = YOLO("./runs/detect/train/weights/best2.pt").to(device)  # pretrained YOLO11n model
 
         sam = sam_model_registry["vit_h"](checkpoint='./models/checkpoints/sam/sam_vit_h_4b8939.pth').to(device)
         # sam_model_type = "vit_b"   
