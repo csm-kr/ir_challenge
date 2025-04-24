@@ -1,1 +1,6 @@
 sam
+pycocotools
+tqdm
+json
+opencv-python
+ultralytics
